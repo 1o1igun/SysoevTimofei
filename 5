@@ -1,0 +1,51 @@
+#5.1
+import math
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+RAST=math.sqrt((x2-x1)**2+(y2-y1)**2)
+print(RAST)
+
+#5.2 
+A=int(input())
+B=int(input())
+C=int(input())
+AC=abs(C-A)
+BC=abs(C-B)
+sum=AC+BC
+print(AC,BC,sum)
+
+#5.3
+A=int(input())
+B=int(input())
+C=int(input())
+AC=abs(A-C)
+BC=abs(C-B)
+proiz=AC*BC
+print(proiz)
+
+#5.4
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+P = 2*(abs(x1-x2)+abs(y1-y2))
+S = abs(x1-x2) * abs (y1-y2)
+print (P,S)
+
+#5.5
+import math
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y1 = int(input())
+x3 = int(input())
+y3 = int(input())
+a = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+b = math.sqrt((x3-x2)**2 + (y3-y2)**2)
+c = math.sqrt((x3-x1)**2 + (y3-y1)**2)
+P = a + b + c
+p = P/2
+S = math.sqrt (p*(p-a)*(p-b)*(p-c))
+print (P,S)
