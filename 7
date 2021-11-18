@@ -1,0 +1,53 @@
+#7.1
+import math
+a = int(input())
+if (a > 0) and (a < 360):
+    res = (a*math.pi)/180
+    print (res)
+else:
+    print ('Недопустимое значения а')
+#7.2
+import math
+a = input()
+b=int(a)
+if (b > 0) and (b < 2*math.pi):
+    grad = (b*180)/math.pi
+    print (grad)
+else:
+    print ('Недопустимое значения b')
+#7.3
+A = int(input())
+X = int(input())
+Y = int(input())
+kg = A/X
+Ykg = (A/X)*Y
+print (kg, Ykg)
+#7.4
+v1 = int(input())
+v2 = int(input())
+s = int(input())
+t = int(input())
+rast= s + v1*t + v2*t 
+print (rast)
+#7.5
+A = int(input())
+B = int(input())
+if (A!=0):
+    x = (B*(-1)) / A 
+    print (x)
+else:
+    print ('А не должно быть равно 0')
+#7.6
+A1 = int(input())
+B1 = int(input())
+C1 = int(input())
+A2 = int(input())
+B2 = int(input())
+C2 = int(input())
+k=A1*B2-A2*B1
+if  (A1 * B2 - A2 * B1 !=0):
+    x = (C1 * B2 - C2*B1) / k 
+    y = (A1*C2 - A2*C1) / k 
+    print (x,y)
+else:
+    print ('Решений не существует')
